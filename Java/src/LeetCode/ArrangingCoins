@@ -1,0 +1,18 @@
+public class ArrangingCoins{
+    public static void main(String[] args){
+        int n;
+        System.out.println("Input: " + n);
+        System.out.println("Output: " + arrangeCoins(n));
+    }
+
+    public int arrangeCoins(int n){
+        int i=1;
+        while(n>0){
+            n = n-i;
+            if(n>i){
+                i++;
+            }
+        }
+        return i;
+    }
+}
